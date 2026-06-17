@@ -2,6 +2,13 @@
 
 This project predicts next-month sales using the Rossmann Store Sales dataset. It is designed as a portfolio-ready forecasting project that is easy to run, easy to explain, and comfortable to demo for recruiters, HR teams, hiring managers, or non-technical stakeholders.
 
+## Repository Summary
+
+- End-to-end next-month sales forecasting workflow using the Rossmann Store Sales dataset
+- Two forecasting models compared with time-based validation: Prophet and ARIMA
+- Forecast exports, evaluation metrics, business summary, and presentation-ready charts
+- Local walkthrough and Google Colab notebook included for demo-friendly delivery
+
 ## Business Goal
 
 Forecast the next month's sales so the business can plan inventory, staffing, promotion timing, and monthly revenue targets more confidently.
@@ -94,6 +101,12 @@ Interpretation:
 - Prophet is selected because it produces the lowest RMSE on the holdout period.
 - ARIMA remains a useful baseline and performs competitively on percentage-based error metrics.
 - This gives you a stronger demo story because the final forecast comes from a measured model comparison rather than a single-model assumption.
+
+Selection note:
+
+- This project uses `RMSE` as the primary model selection metric.
+- That is why `Prophet` is chosen as the final model even though `ARIMA` is lower on `MAPE` and `SMAPE`.
+- The decision rule is explicit and documented, which makes the forecast selection easier to defend during demos and interviews.
 
 ## Project Structure
 
@@ -225,6 +238,16 @@ This command will:
 - create the next-month forecast
 - export charts and summary files
 
+## Quick Files to Open
+
+If you want a fast portfolio walkthrough, start with these files:
+
+1. `README.md`
+2. `reports/figures/monthly_sales_trend.png`
+3. `reports/metrics_summary.csv`
+4. `forecasts/best_model_next_month_forecast.csv`
+5. `reports/business_summary.md`
+
 ## Notebook-Style Walkthrough for Demo Use
 
 The easiest file to present during a demo is:
@@ -285,8 +308,7 @@ Because the notebook imports the pipeline from `src/sales_forecasting_pipeline.p
 
 If you want the project to feel smooth during a live demo, use this order:
 
-1. Start with the business problem:
-   predicting next-month sales.
+1. Start with the business problem: predicting next-month sales.
 2. Show the historical daily and monthly trend charts.
 3. Explain that you compared two forecasting approaches instead of relying on only one model.
 4. Open `reports/metrics_summary.csv` and explain how the best model was selected.
@@ -294,18 +316,6 @@ If you want the project to feel smooth during a live demo, use this order:
 6. Open `reports/business_summary.md` to translate the numbers into business impact.
 
 This flow helps even a non-technical audience understand the value quickly.
-
-## Demo Files to Open First
-
-If you only have a few minutes to present the project, open these files in this order:
-
-1. `README.md`
-2. `reports/figures/monthly_sales_trend.png`
-3. `reports/metrics_summary.csv`
-4. `forecasts/best_model_next_month_forecast.csv`
-5. `reports/business_summary.md`
-
-That sequence makes the project feel guided and easy to understand.
 
 ## What Makes This Portfolio Project Strong
 
