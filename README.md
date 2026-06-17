@@ -303,6 +303,7 @@ Option 2:
 ### Colab note
 
 Because the notebook imports the pipeline from `src/sales_forecasting_pipeline.py`, the `src/` folder must be present in the runtime. This keeps the Colab version aligned with the local project instead of duplicating logic.
+The notebook now also supports a self-bootstrapping flow: if the project files are not present in the runtime, it will clone this repository and install the required dependencies automatically before running.
 
 ## Recommended Demo Flow for HR or Recruiters
 
