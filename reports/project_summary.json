@@ -1,0 +1,23 @@
+{
+  "dataset": "pratyushakar/rossmann-store-sales",
+  "best_model": "Prophet",
+  "forecast_start": "2015-08-01",
+  "forecast_end": "2015-08-31",
+  "forecast_total_sales": 200949868.71919098,
+  "validation_metrics": [
+    {
+      "model": "Prophet",
+      "rmse": 1377300.6272270586,
+      "mae": 1105197.331877421,
+      "mape": 23.435817734753584,
+      "smape": 27.793165628270334
+    },
+    {
+      "model": "ARIMA",
+      "rmse": 1855312.4801336278,
+      "mae": 1285769.2928840749,
+      "mape": 17.454958143983625,
+      "smape": 19.84633529621227
+    }
+  ]
+}
