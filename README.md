@@ -215,7 +215,7 @@ After running the project, these outputs are generated automatically:
 ### 1. Open the project folder
 
 ```powershell
-cd "d:\code\project portfolio\Sales Forecasting"
+cd Sales-Forecasting
 ```
 
 ### 2. Install dependencies
