@@ -1,6 +1,6 @@
 # Sales Forecasting
 
-Portfolio project for forecasting next-month sales from Rossmann historical data and turning the forecast into planning-ready business insight.
+This project forecasts next-month sales from Rossmann historical data and turns the forecast into planning-ready business insight.
 
 ## What This Project Does
 
