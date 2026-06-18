@@ -1,6 +1,6 @@
 # Sales Forecasting
 
-This project forecasts next-month sales from Rossmann historical data and turns the forecast into planning-ready business insight.
+This project forecasts next-month sales from Rossmann historical data, compares forecasting models, and turns the output into planning-ready business insight.
 
 ## What This Project Does
 
@@ -11,7 +11,14 @@ This project forecasts next-month sales from Rossmann historical data and turns 
 
 ## Why It Matters
 
-This project shows how Python can be used to build a practical forecasting workflow for inventory planning, staffing, promotions, and revenue target setting.
+This project demonstrates a time series workflow: preparing historical sales data, validating multiple forecasting approaches, selecting the stronger model, and using the forecast to support planning decisions.
+
+## Data Science Focus
+
+- Time series forecasting and validation
+- Model comparison with Prophet and ARIMA
+- Forecast evaluation with error metrics
+- Business interpretation of predicted sales trends
 
 ## Primary Workflow
 
